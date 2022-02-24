@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <style>
+        tr:hover {
+            background-color: #808080;
+        }
+        
+        th.b {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #1520A6;
+            color: white;
+        }
+        
+        th.l {
+            padding: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+        
+        td.a {
+            font-size: 10px;
+            text-align: center;
+        }
+        
+        .GC {
+            grid-area: 1/1/1/1;
+        }
+        
+        .AC {
+            grid-area: 2/2/2/2;
+        }
+        
+        .TC {
+            grid-row: 1;
+            grid-column: 3 / 4;
+        }
+        
+        .FC {
+            grid-row: 2;
+            grid-column: 3 / 4;
+        }
+        
+        .card {
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            position: relative;
+            flex-wrap: wrap;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 20px 8px #d0d0d0;
+        }
+        
+        .Granny {
+            padding: 2px 16px;
+            text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body style="font-family: Montserrat">
+    <h1>My web page</h1>
+
+    <div style="grid-template-columns: 1fr 1fr 1fr;">
+        <div class="card GC">
+            <p class="Granny">
+                <img width="200" src="https://pbs.twimg.com/media/DEiWpgGXgAQVP4j.jpg" alt="badass grany" />
+            </p>
+
+            <h3 class="Granny">
+                <div>Badass granny caracteristics</div>
+                <ol>
+                    <li>She's a Badass</li>
+                    <li>Ready to kill you</li>
+                    <li>makes good pasta</li>
+                </ol>
+            </h3>
+        </div>
+
+        <div class="card AC">
+            <div class="Granny">
+                <h2><strong>Feliz Jueves</strong></h2>
+                <iframe width="358" height="229" src="https://www.youtube.com/embed/LXMvPFYu-Tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <h3 class="Granny">
+                <div>Características de Azuka</div>
+                <ul>
+                    <li>Te desea un feliz jueves :D</li>
+                    <li>Tendencias suicida</li>
+                    <li>makes good pasta</li>
+                </ul>
+            </h3>
+        </div>
+
+
+        <div class="card TC">
+            <h3 class="Granny"> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> Tabla comparativa </a></h3>
+
+            <table>
+                <tr>
+                    <th class="l">Características</th>
+                    <th class="l">Azuka</th>
+                    <th class="l">Badass granny</th>
+                    <th class="l">Hitler</th>
+                </tr>
+                <tr>
+                    <th class="b">likeability</th>
+                    <td>Low</td>
+                    <td>High</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <th class="b">Pasta quality</th>
+                    <td>high</td>
+                    <td>higher</td>
+                    <td>The worst</td>
+                </tr>
+                <tr>
+                    <th class="b">Kill cout</th>
+                    <td>0</td>
+                    <td>10</td>
+                    <td class="a">a</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+
+        <form action="" method="get" class="card">
+            <label for="lname">¿Qué piensas sobre la pasta?</label><br />
+            <input type="text" id="lname" name="lname" value="" /><br />
+            <input onclick="myFunction()" type="submit" value="Submit" id="lol" />
+            <button onclick="myFunction()" type="button">Click xd</button>
+            <p id="p1">Hello World!</p>
+        </form>
+
+    </div>
+
+
+
+    <script>
+        function myFunction() {
+            document.getElementById("p1").innerHTML = document.getElementById("lname").value;
+        }
+    </script>
+</body>
+
+</html>
