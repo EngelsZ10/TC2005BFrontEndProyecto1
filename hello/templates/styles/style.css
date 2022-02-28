@@ -1,6 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-body {
+section {
+    float: left;
+    width: 67%;
+    margin: -0.6%;
+    margin-top: 0.5%;
+    margin-right: 0%;
+    padding: 2%;
+    height: 100%;
+    font-size: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+aside {
+    float: left;
+    width: 28%;
+    margin-top: 0.5%;
+    margin-left: 0%;
+    margin-right: -10%;
+    padding: 1%;
+    height: 100%;
+    text-align: center;
+}
+
+.bdy {
     font-family: Montserrat;
+    background-image: url("../assets/default.jpg");
 }
 
 tr:hover {
@@ -27,14 +54,6 @@ td.a {
     text-align: center;
 }
 
-.GC {
-    grid-area: 1/1/1/1;
-}
-
-.AC {
-    grid-area: 2/2/2/2;
-}
-
 .TC {
     grid-row: 1;
     grid-column: 3 / 4;
@@ -53,10 +72,19 @@ td.a {
     flex-wrap: wrap;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 0 20px 8px #d0d0d0;
+    background-color: white;
+    box-shadow: 0 0 20px 8px gray;
 }
 
 .Granny {
     padding: 2px 16px;
     text-align: center;
+}
+
+#GC {
+    grid-area: 1/1/1/1;
+}
+
+#AC {
+    grid-area: 2/2/2/2;
 }

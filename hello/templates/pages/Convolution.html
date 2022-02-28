@@ -6,12 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../styles/style.css" rel="stylesheet" type="text/css" />
-    <script src="../script/menuCustom.js" type="text/javascript" defer></script>
+    <script src="../scripts/menuCustom.js" type="text/javascript" defer></script>
     <title>WebPage1</title>
 </head>
 
 <body>
     <menu-custom></menu-custom>
+    <main>
+        <section>
+            <article>
+                <h2>¿Qué es convolución de matrices?</h2>
+                La convolución en matrices consiste en procesar una matriz A de MXM utilizando un filtro llamado kernel de NxN (cabe aclarar que la cantidad de renglones y de columnas no tiene que ser el mismo ni para el kernel ni para la matriz)
+            </article>
+            <article>
+
+                <h2>El algoritmo de la convolución consiste en:</h2>
+                <ul>
+                    <li>
+                        Tomar una submatriz de A del mismo tamaño que el kernel
+                    </li>
+                    <li>
+                        Procesar la submatriz utilizando el kernel y obtendremos un elemento de la nueva matriz
+                    </li>
+                    <li>
+                        Este proceso se repite creando la submatriz desde el elemento (1,1) hasta el elemento (M-N, M-N)
+                    </li>
+                    <li>
+                        La pocición del primer valor de la submatriz en la matriz A representa la pocición que tomara en la nueva matriz
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h2>¿Qué son los kernels?</h2>
+                <p>Los Kernels son un filtro que se aplica a cada submatriz de la matriz original estos pueden ser agarrar el valor más alto de la submatriz o hacer un producto de hadamard de ambas matrices y dependiendo de los valores del kernel el producto
+                    nos puede dar información importante de la matriz original</p>
+            </article>
+        </section>
+
+        <aside>
+            <article>
+                <h2>Explicación grafica de la convolución</h2>
+                <img width="80%" src="../assets/Convolucion.gif" alt="Convolucion explicada">
+            </article>
+            <article>
+                <h2>Algunos ejemplos de kernels</h2>
+                <img width="80%" src="../assets/kernels.JPG" alt="Ejemplos kernels">
+            </article>
+
+        </aside>
+    </main>
+    <footer-custom></footer-custom>
 </body>
 
 </html>

@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../styles/style.css" rel="stylesheet" type="text/css" />
-    <script src="../script/menuCustom.js" type="text/javascript" defer></script>
+    <script src="../scripts/menuCustom.js" type="text/javascript" defer></script>
+    <script src="../scripts/script.js" type="text/javascript" defer></script>
     <title>WebPage1</title>
 </head>
 
-<body>
+<body id="bdy">
     <menu-custom></menu-custom>
 
-    <h1>My web page</h1>
+    <main style="grid-template-columns: 1fr 1fr 1fr; margin: 15px;">
 
-    <div style="grid-template-columns: 1fr 1fr 1fr;">
-        <div class="card GC">
+        <div class="card" id="GC">
             <p class="Granny">
-                <img width="200" src="https://pbs.twimg.com/media/DEiWpgGXgAQVP4j.jpg" alt="badass grany" />
+                <img width="200" src="../assets/badassGranny.jpg" alt="badass grany" />
             </p>
 
             <h3 class="Granny">
@@ -31,10 +31,10 @@
             </h3>
         </div>
 
-        <div class="card AC">
+        <div class="card" id="AC">
             <div class="Granny">
                 <h2><strong>Feliz Jueves</strong></h2>
-                <iframe width="358" height="229" src="https://www.youtube.com/embed/LXMvPFYu-Tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="358" height="209" src="https://www.youtube.com/embed/LXMvPFYu-Tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
             <h3 class="Granny">
@@ -91,15 +91,9 @@
             <p id="p1">Hello World!</p>
         </form>
 
-    </div>
+    </main>
+    <footer-custom></footer-custom>
 
-
-
-    <script>
-        function myFunction() {
-            document.getElementById("p1").innerHTML = document.getElementById("lname").value;
-        }
-    </script>
 </body>
 
 </html>
