@@ -38,7 +38,7 @@ menuTemplate.innerHTML = `
         }
     </style>
     <header>
-        <a href="https://www.w3schools.com/" target="_blank"><img src="../assets/W3S.svg" alt="w3shools logo" height="45px" style="padding: 7px;"></a>
+        <a href="https://www.w3schools.com/" target="_blank"><img src="../static/assets/W3S.svg" alt="w3shools logo" height="45px" style="padding: 7px;"></a>
         <nav>
             <ul>
                 <li>
