@@ -6,6 +6,14 @@ from .models import Greeting
 # Create your views here.
 def index(request):
     # return HttpResponse('Hello from Python!')
+    return render(request, "Aplication.html")
+
+def Conv(request):
+    # return HttpResponse('Hello from Python!')
+    return render(request, "Convolution.html")
+
+def App(request):
+    # return HttpResponse('Hello from Python!')
     return render(request, "index.html")
 
 
