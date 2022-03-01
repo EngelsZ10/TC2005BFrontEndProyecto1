@@ -42,13 +42,13 @@ menuTemplate.innerHTML = `
         <nav>
             <ul>
                 <li>
-                    <a id="i" href="/">E</a>
+                    <a id="i" href="index.html">E</a>
                 </li>
                 <li>
-                    <a id="c" href="/conv">Convolución de matrices</a>
+                    <a id="c" href="Convolution.html">Convolución de matrices</a>
                 </li>
                 <li>
-                    <a id="a" href="/app">Aplicación de la convolución de matrices</a>
+                    <a id="a" href="Aplication.html">Aplicación de la convolución de matrices</a>
                 </li>
             </ul>
         </nav>

@@ -3,9 +3,9 @@ function myFunction() {
 }
 
 document.getElementById("bdy").style.backgroundImage = "url('../static/assets/default.jpg')";
-document.getElementById("i").href = "";
-document.getElementById("c").href = "/conv";
-document.getElementById("a").href = "/app";
+//document.getElementById("i").href = "";
+//document.getElementById("c").href = "/conv";
+//document.getElementById("a").href = "/app";
 
 
 document.getElementById("GC").onmouseover = function() {
