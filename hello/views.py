@@ -6,7 +6,7 @@ from .models import Greeting
 # Create your views here.
 def index(request):
     # return HttpResponse('Hello from Python!')
-    return render(request, "Aplication.html")
+    return render(request, "index.html")
 
 def Conv(request):
     # return HttpResponse('Hello from Python!')
@@ -14,7 +14,7 @@ def Conv(request):
 
 def App(request):
     # return HttpResponse('Hello from Python!')
-    return render(request, "index.html")
+    return render(request, "Aplication.html")
 
 
 def db(request):

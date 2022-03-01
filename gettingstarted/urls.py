@@ -16,8 +16,8 @@ import hello.views
 
 urlpatterns = [
     path("", hello.views.index, name="index"),
-    path("", hello.views.Conv, name="Convolution.html"),
-    path("", hello.views.App, name="Aplication"),
+    path("conv", hello.views.Conv, name="conv"),
+    path("app", hello.views.App, name="app"),
     path("db/", hello.views.db, name="db"),
     path("admin/", admin.site.urls),
 ]
